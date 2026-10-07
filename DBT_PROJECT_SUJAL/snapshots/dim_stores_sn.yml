@@ -1,0 +1,12 @@
+snapshots:
+  - name: stores_sn
+    relation: ref('stores_eph')
+
+    config:
+      schema: "{{ var('snapshot_schema') }}"
+      database: "{{ var('snapshot_database') }}"
+      unique_key: store_store_id
+      strategy: timestamp
+      updated_at: store_updated_timestamp
+      dbt_valid_to_current: "to_date('9999-12-31')"
+

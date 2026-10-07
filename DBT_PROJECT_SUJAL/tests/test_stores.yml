@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stores
+    columns:
+      - name: store_id
+        tests:
+          - not_null
+          - id_nonnegative
+          - relationships:
+              arguments:
+                to: ref('stores')
+                field: store_id
+

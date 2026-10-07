@@ -1,0 +1,11 @@
+DBT_PROJECT_SUJAL:
+  outputs:
+    dev:
+      catalog: dbt_project
+      host: dbc-f367c50b-94ac.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/a2e9170830dcd91d
+      schema: dbt_schema
+      threads: 1
+      token: dapifcd77023120d7132144ed1a610063a51
+      type: databricks
+  target: dev

@@ -1,0 +1,9 @@
+sources:
+  - name: DBT_sujal
+    database: dbt_project  
+    schema: dbt_schema 
+    tables:
+      - name: employees
+      - name: customers_1
+      - name: orders_1
+      - name: stores
